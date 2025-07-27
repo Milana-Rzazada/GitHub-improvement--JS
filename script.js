@@ -18,3 +18,9 @@ message.addEventListener('mouseover', () =>{
 
 
 
+const lastKey = document.getElementById('lastKey');
+const  pressKey= document.getElementById('pressKey');
+
+lastKey.addEventListener('keydown', (e) => {
+  pressKey.textContent = e.key;
+});

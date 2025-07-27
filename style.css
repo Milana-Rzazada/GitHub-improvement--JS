@@ -5,7 +5,30 @@ body {
   
 }
 
+h1{
+    color: brown;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+}
 
+h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+}
+
+p{
+    border: 2px solid grey;
+    max-width: 100%;
+    width: 400px;
+    height:50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    border-style: none;
+}
 .event-section{
     display: flex;
     flex-direction: column;
@@ -24,6 +47,7 @@ flex-direction: column;
 
 
 }
+
 
 
 .event-section .mouse-events form textarea{
@@ -57,3 +81,20 @@ flex-direction: column;
     background-color: blueviolet;
     color: beige;
  }
+
+ @media (max-width: 768px) {
+    .event-section .mouse-events{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+.event-section #lastKey{
+    max-width: 100%;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+ 
