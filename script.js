@@ -45,3 +45,15 @@ eventForm.addEventListener('submit', (e) => {
     formMessage.textContent = `Please, enter your information!`;
   }
 });
+
+
+const focusBlur = document.getElementById('focusBlur');
+const focusBlurMessage = document.getElementById('focusBlurMessage');
+
+focusBlur.addEventListener('focus', () => {
+  focusBlurMessage.textContent = 'You have focused on the input field!';
+});
+
+focusBlur.addEventListener('blur', () => {
+  focusBlurMessage.textContent = 'You have left the input field!';
+});
