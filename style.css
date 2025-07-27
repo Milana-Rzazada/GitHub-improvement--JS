@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  box-sizing: border-box;
+  
+}
+
+
+.event-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.event-section .mouse-events {
+display: flex;
+gap: 40px;
+flex-direction: column;
+
+
+}
+
+
+.event-section .mouse-events form textarea{
+    max-width: 100%;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    border-style: none;
+}
+.event-section .mouse-events button{
+    height: 40px;
+    max-width: 100%;
+    width: 100px;
+    border-radius: 20px;
+    border-style: none;
+    color: white;
+    background-color: brown;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+ #mouseBtn1:hover{
+    background-color: aqua;
+    color: black;
+   transition-delay: 0.5;
+  
+ }
+ #mouseBtn2:hover{
+    background-color: blueviolet;
+    color: beige;
+ }
