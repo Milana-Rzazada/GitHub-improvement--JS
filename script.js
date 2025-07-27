@@ -17,7 +17,7 @@ message.addEventListener('mouseover', () =>{
 });
 
 
-
+//Keyboard Events
 const lastKey = document.getElementById('lastKey');
 const  pressKey= document.getElementById('pressKey');
 
@@ -46,6 +46,9 @@ eventForm.addEventListener('submit', (e) => {
   }
 });
 
+
+
+
 //Focus-Blur Events
 const focusBlur = document.getElementById('focusBlur');
 const focusBlurMessage = document.getElementById('focusBlurMessage');
@@ -57,6 +60,8 @@ focusBlur.addEventListener('focus', () => {
 focusBlur.addEventListener('blur', () => {
   focusBlurMessage.textContent = 'You have left the input field!';
 });
+
+
 
 //Event Delegation
 const delegation = document.getElementById('delegation');
