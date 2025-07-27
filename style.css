@@ -83,7 +83,7 @@ flex-direction: column;
  }
 
  @media (max-width: 768px) {
-    .event-section .mouse-events{
+    .event-section {
         display: flex;
         flex-direction: column;
     }
@@ -98,3 +98,32 @@ flex-direction: column;
     
 }
  
+#eventForm{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+#eventForm input{
+    max-width: 100%;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+#eventForm button{
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(9, 172, 58);
+    border-style: none;
+    font-size: 18px;
+    color: beige;
+
+}
+
+#eventForm button:hover{
+    background-color: red;
+    transition-delay: 0.5;
+}

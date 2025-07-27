@@ -24,3 +24,24 @@ const  pressKey= document.getElementById('pressKey');
 lastKey.addEventListener('keydown', (e) => {
   pressKey.textContent = e.key;
 });
+
+
+
+// Form Events
+const eventForm = document.getElementById('eventForm');
+const formMessage = document.getElementById('formMessage');
+
+eventForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = eventForm.elements['name'].value.trim(); 
+  const surname = eventForm.elements['surname'].value.trim();
+  const email = eventForm.elements['email'].value.trim();
+  const dob = eventForm.elements['dob'].value.trim();
+
+  if (name && surname && email && dob) {
+    formMessage.textContent = `Hello, ${name}!` + ` Your information:, ${name}, ${surname}, ${email}, ${dob}`;
+  } else {
+    formMessage.textContent = `Please, enter your information!`;
+  }
+});
