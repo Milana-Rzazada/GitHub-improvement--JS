@@ -46,7 +46,7 @@ eventForm.addEventListener('submit', (e) => {
   }
 });
 
-
+//Focus-Blur Events
 const focusBlur = document.getElementById('focusBlur');
 const focusBlurMessage = document.getElementById('focusBlurMessage');
 
@@ -56,4 +56,19 @@ focusBlur.addEventListener('focus', () => {
 
 focusBlur.addEventListener('blur', () => {
   focusBlurMessage.textContent = 'You have left the input field!';
+});
+
+//Event Delegation
+const delegation = document.getElementById('delegation');
+const delegationMessage = document.getElementById('delegationMessage');
+
+delegation.addEventListener('change', (e) => {
+  if (e.target.type === 'checkbox') {
+    const checked = e.target.checked;
+    const value = e.target.value;
+
+    delegationMessage.textContent = checked
+      ? `"${value}" choosed.`
+      : `"${value}" delisted.`;
+  }
 });
